@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jordi on 23/11/16.
+ * Created by jordi
  * Activitat 1 MP09-UF2
  * Exercici 1
  * Versió sequèncial de MultiplicaLlista.java

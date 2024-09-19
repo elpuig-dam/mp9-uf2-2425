@@ -3,7 +3,7 @@ package s1;
 import java.util.concurrent.Callable;
 
 /**
- * Created by jordi on 23/11/16.
+ * Created by jordi.
  * Activitat 1 MP09-UF2
  * Exercici 1
  */

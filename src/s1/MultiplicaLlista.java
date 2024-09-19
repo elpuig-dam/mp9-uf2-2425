@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * Created by jordi on 23/11/16.
+ * Created by jordi.
  * Activitat 1 MP09-UF2
  * Exercici 1
  * Utilitza: Multiplicacio.java
