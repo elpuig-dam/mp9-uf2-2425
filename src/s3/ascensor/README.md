@@ -4,7 +4,7 @@ L'**Ascensor** és un objecte que ha de ser agafat per **persones**.
 El seu estat es defineix a partir del pis en què es troba, 
 la quantitat de persones que hi ha a dins, si està plè, quina capacitat té
 i si està pujant o baixant.  
-El seu comportament és principalment monitoritzar el seu us, i aquestes en són les condicions:  
+Cal monitoritzar el seu us, restringir o no l'accés al recurs, i aquestes en són les condicions:  
  - Un persona pot entrar-hi si no està plè
  - Una persona cal que surti de l'ascensor quan hagi arribat al pis on vol anar
  - L'ascensor sempre fa un recorregut seqüencial, és a dir, va del pis 0 al pis 10 i després torna al pis 0.
