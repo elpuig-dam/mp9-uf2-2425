@@ -42,7 +42,7 @@ public  class Pot2 {
 	public synchronized int agafaGaletes(int n) {
 		System.out.println("vull agafar, hi han " + numProcesosPot + " processos");
 		try {
-			while(numProcesosPot>=maxNensPot || !HiHaGaletes){
+			while(potOcupat || !HiHaGaletes){
 				System.out.println("nunP: " + numProcesosPot + " maxP:" + maxNensPot + " HiHAGal:" + HiHaGaletes);
 				wait();
 			}
@@ -57,7 +57,7 @@ public  class Pot2 {
 			if(this.galetes <= 0) HiHaGaletes = false;
 			notifyAll();
 			try {
-				Thread.sleep((long) ((Math.random()*8000)+2000));
+				Thread.sleep((long) ((Math.random()*10000)+2000));
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -77,7 +77,7 @@ public  class Pot2 {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		Pot2 Fam = new Pot2(0,3);
+		Pot2 Fam = new Pot2(2,4);
 		// Crea un pool de 2 fils 
 		// Crea objecte Runnable.
 		Thread nen = new Thread(new Fill(Fam,"Joan"));
